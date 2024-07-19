@@ -1,0 +1,77 @@
+.login-container {
+  justify-content: center;
+  align-items: center;
+    max-width: 400px;
+    margin: 50px auto;
+    margin-top: 150px;
+    padding: 40px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(13, 13, 13, 0.2);
+    font-family: 'Poppins';
+    
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user, .pass {
+    height: 20px;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 3px 5px 5px 0px rgba(12, 1, 1, 0.522);
+  }
+
+  .user:hover, .pass:hover{
+    background-color: rgb(236, 232, 232);
+
+  }
+  
+  .sub {
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 25px;
+    border: none;
+    background: rgb(255, 2, 44);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .sub:hover {
+    background-color: rgb(241, 27, 59);
+    transform: scale(0.9);
+  }
+  
+  p {
+    margin-top: 20px;
+    font-family: 'Poppins';
+
+  }
+  
+  a {
+    color: #1e00ff;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

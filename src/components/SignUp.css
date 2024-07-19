@@ -1,0 +1,70 @@
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 150px;
+
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .username, .email, .password{
+    height: 20px;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 3px 5px 5px 0px rgba(12, 1, 1, 0.522);
+  }
+
+  .username:hover, .password:hover, .email:hover{
+    background-color: rgb(236, 232, 232);
+
+  }
+  
+  .submit {
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 25px;
+    border: none;
+    background: rgb(255, 2, 44);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .submit:hover {
+    background-color: rgb(241, 27, 59);
+    transform: scale(0.9);
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #0066ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

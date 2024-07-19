@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    height:500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.351);
+    background: transparent;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+h1 {
+    color: rgb(5, 255, 188);
+    margin-bottom: 20px;
+}
+
+.name, .amt, .cat, .date {
+    height: 20px;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 3px 5px 5px 0px rgba(12, 1, 1, 0.522);
+}
+
+
+.catt{
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 3px 5px 5px 0px rgba(12, 1, 1, 0.522);
+
+}
+
+.name:hover, .amt:hover,  .catt:hover,.date:hover ,.cat:hover {
+    background-color: rgb(236, 232, 232);
+}
+
+.add {
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 25px;
+    border: none;
+    background: rgb(255, 2, 44);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add:hover {
+    background-color: rgb(241, 27, 59);
+    transform: scale(0.9);
+}
+
+.background {
+    background: url('../assets/bg.jpg') no-repeat center center fixed; 
+    background-size:cover;
+    width:fit-content;
+    border: 2px solid;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: content;
+    align-items: center;
+    height: 750px;
+}
