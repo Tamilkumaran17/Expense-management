@@ -4,7 +4,7 @@
     padding: 40px;
     background: transparent;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px 3px rgba(10, 208, 79, 0.574);
     margin-top: 150px;
 
   }
@@ -27,7 +27,7 @@
     margin-bottom: 15px;
     border-radius: 30px;
     border: none;
-    box-shadow: 3px 5px 5px 0px rgba(12, 1, 1, 0.522);
+    box-shadow: 0 4px 8px  rgba(14, 228, 89, 0.559);
   }
 
   .username:hover, .password:hover, .email:hover{
@@ -68,3 +68,17 @@
     text-decoration: underline;
   }
   
+  .signup-container.light {
+    background-color: rgba(255, 255, 255, 0.63);
+    color: black;
+}
+
+.signup-container.dark {
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 10px;
+}

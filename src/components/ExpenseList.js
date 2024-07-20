@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useTheme } from '../components/ThemeContext';
+import '../components/ExpenseList.css';
 
 const ExpenseList = () => {
+    const { theme } = useTheme();
     const [expenses, setExpenses] = useState([]);
 
     useEffect(() => {
@@ -11,7 +14,7 @@ const ExpenseList = () => {
     }, []);
 
     return (
-        <div>
+        <div className={`expense-list-container ${theme}`}>
             <h2>Expenses</h2>
             <ul>
                 {expenses.map(expense => (

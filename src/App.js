@@ -4,12 +4,26 @@ import ExpenseForm from './components/ExpenseForm';
 import ExpenseList from './components/ExpenseList';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import { ThemeProvider, useTheme } from './components/ThemeContext';
+import { FaSun, FaMoon } from 'react-icons/fa';
 import './App.css';
+
+
+const ToggleButton = () => {
+  const { theme, toggleTheme } = useTheme();
+  return (
+      <button className="toggle-button" onClick={toggleTheme} aria-label="Toggle theme">
+          {theme === 'light' ? <FaMoon className='moon'/> : <FaSun className='sun'/>}
+      </button>
+  );
+};
 
 function App() {
   return (
+    <ThemeProvider>
     <Router>
       <div className="App">
+        <ToggleButton/>
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
@@ -19,6 +33,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </ThemeProvider>
   );
 }
 

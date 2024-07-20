@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../components/ThemeContext';
 import './Login.css';
 
 const Login = () => {
+
+  const {theme} = useTheme();
   return (
-    <div className="login-container">
+    <div className={`login-container ${theme}`}>
       <h2>Login</h2>
       <form>
         <input className='user' type="email" placeholder="Email" required />

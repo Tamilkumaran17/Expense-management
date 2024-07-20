@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import "./ExpenseForm.css";
 // import bg from "../assets/bg.jpg"
+import { useTheme } from '../components/ThemeContext';
 
 const ExpenseForm = () => {
-    const [expense, setExpense] = useState({
+
+    const { theme } = useTheme();
+
+    const [expense, setExpense] 
+    = useState({
         name: '',
         category: '',
         amount: '',
@@ -44,8 +49,8 @@ const ExpenseForm = () => {
     };
 
     return (
-        <div className='background'>
-        <div className='container'>
+        <div className="background">
+        <div className={`container ${theme}`}>
             <form onSubmit={handleSubmit}>
                 <h1>Expense Form</h1>
                 <input className='name' type="text" name="name" value={expense.name} onChange={handleChange} placeholder="Enter your Name" />

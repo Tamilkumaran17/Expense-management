@@ -29,7 +29,7 @@ form {
 }
 
 h1 {
-    color: rgb(5, 255, 188);
+    
     margin-bottom: 20px;
 }
 
@@ -85,7 +85,7 @@ h1 {
     background: url('../assets/bg.jpg') no-repeat center center fixed; 
     background-size:cover;
     width:fit-content;
-    border: 2px solid;
+    /* border: 2px solid; */
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -93,4 +93,20 @@ h1 {
     flex: content;
     align-items: center;
     height: 750px;
+    /* border: 2px solid; */
+}
+
+.container.light {
+    background-color: rgba(255, 255, 255, 0.605);
+    color: black;
+}
+
+.container.dark {
+    background-color: rgba(0, 0, 0, 0.652);
+    color: white;
+}
+
+input, select, button {
+    margin-top: 10px;
+    padding: 10px;
 }
