@@ -1,16 +1,56 @@
+
+.topic{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.topic h1{
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  font-size: 80px;
+}
+
+.topic h1:nth-child(1){
+  color: #ffffff;
+  text-shadow: 0 0 10px #1dafe4, 0 0 20px #1dafe4, 0 0 40px #1dafe4, 0 0 80px #1dafe4, 0 0 120px #1dafe4;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.topic h1:nth-child(2){
+  color: transparent;
+  -webkit-text-stroke: 2px #1dafe4;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }}
+
 .login-container {
   justify-content: center;
   align-items: center;
     max-width: 400px;
     margin: 50px auto;
-    margin-top: 150px;
+    margin-top: 230px;
     padding: 40px;
     background: transparent;
     border-radius: 10px;
-    box-shadow: 0 2px 8px 3px rgba(224, 35, 35, 0.488);
+    box-shadow: 0 2px 8px 3px #f317177c;
     font-family: 'Poppins';
-    
+    border-top-color: #00ffa2;
   }
+
+ 
   
   h2 {
     margin-bottom: 20px;

@@ -7,6 +7,15 @@ const Login = () => {
 
   const {theme} = useTheme();
   return (
+    <>
+    <div className='topic'>
+   <h1>
+      Expense Management
+    </h1>
+    <h1>
+      Expense Management
+    </h1>
+   </div>
     <div className={`login-container ${theme}`}>
       <h2>Login</h2>
       <form>
@@ -17,7 +26,9 @@ const Login = () => {
       <p className='l'>
         Don't have an account? <Link to="/signup">Sign Up</Link>
       </p>
+      
     </div>
+    </>
   );
 };
 

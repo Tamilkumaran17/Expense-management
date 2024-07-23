@@ -3,6 +3,7 @@ import axios from 'axios';
 import "./ExpenseForm.css";
 // import bg from "../assets/bg.jpg"
 import { useTheme } from '../components/ThemeContext';
+import { Link } from 'react-router-dom';
 
 const ExpenseForm = () => {
 
@@ -67,7 +68,7 @@ const ExpenseForm = () => {
                 )}
                 <input className='amt' type="number" name="amount" value={expense.amount} onChange={handleChange} placeholder="Enter Amount" />
                 <input className='date' type="date" name="date" value={expense.date} onChange={handleChange} />
-                <button className='add' type="submit">Add Expense</button>
+                <button className='add' type="submit"> <Link to="/expenses" className='link'>Add Expense</Link> </button>
             </form>
         </div>
         </div>
