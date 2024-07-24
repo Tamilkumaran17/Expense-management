@@ -9,12 +9,12 @@ const Login = () => {
   return (
     <>
     <div className='topic'>
-   <h1>
+   <h2>
       Expense Management
-    </h1>
-    <h1>
+    </h2>
+    <h2>
       Expense Management
-    </h1>
+    </h2>
    </div>
     <div className={`login-container ${theme}`}>
       <h2>Login</h2>
